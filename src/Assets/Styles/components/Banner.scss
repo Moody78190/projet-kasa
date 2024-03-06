@@ -1,7 +1,35 @@
-.banner-img {
-    height: 223px;
+.banner {
     width: 1240px;
+    position: relative;
+    margin-left:7.5rem ;
+    
+   
+
+img.banner-img{
+    width: 1240px;
+    height: 223px;
     object-fit: cover;
     border-radius: 2rem;
-    opacity: 100%;
+    filter: brightness(0.5);
+    padding-left: 1rem;
+
+}
+ h1{
+    position: absolute;
+    top:20%;
+    left: 20%;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 68px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+
+
+
+}
+
 }

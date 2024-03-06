@@ -10,7 +10,7 @@ createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/Home" element={<Home />} />
+        <Route path="/" element={<Home />} />
                 <Route path="/About" element={<About />} />
                 <Route path="/Rentals" element={<Rentals/>} />
                 <Route path="/NotFound" element={<NotFound />} />

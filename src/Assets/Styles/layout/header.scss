@@ -1,14 +1,16 @@
 .navbar{
     width: 1240px;
     height: auto;
+    margin:auto;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     
     .logo{
     margin-right: auto;
-    margin-left:2rem;
+    padding-left:1rem;
     margin-top: 2rem;
+    font-size: 68px;
   
 }  
 ul{

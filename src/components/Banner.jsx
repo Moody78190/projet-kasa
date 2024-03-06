@@ -6,9 +6,10 @@ import Cliffs from '../Assets/images/Cliffs.png';
 
 function Banner() {
   return (
-    <div className="banner">
+    <section className="banner">
         <img className='banner-img' src={Cliffs} alt="Logo" />
-      </div>
+        <h1>Chez vous, partout et ailleurs</h1>
+      </section>
   )
 }
 
