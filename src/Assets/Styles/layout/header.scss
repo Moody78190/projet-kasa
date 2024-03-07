@@ -1,10 +1,14 @@
+.header{
+
+
 .navbar{
-    width: 1240px;
+    flex-wrap: wrap;
+    width: 82%;
     height: auto;
     margin:auto;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+   
     
     .logo{
     margin-right: auto;
@@ -33,4 +37,5 @@ ul{
    
 
    }
+}
 }

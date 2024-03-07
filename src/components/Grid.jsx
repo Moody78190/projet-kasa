@@ -1,18 +1,20 @@
-import React from 'react'
-import'../Assets/Styles/main.scss';
-import Card from './Card'; 
+import React from 'react';
+import Card from './Card';
+import Data from '../Assets/Data/data.json';
 
-
-
-const GridContainer = () => (
-  <div className="grid-container">
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-  </div>
-);
+const GridContainer = () => {
+  return (
+    <section className="grid-container">
+      {Data.map((item, index) => (
+        <Card
+          key={index}
+          title={item.title}
+          cover={item.cover}
+          rating={item.rating}
+        />
+      ))}
+    </section>
+  );
+};
 
 export default GridContainer;

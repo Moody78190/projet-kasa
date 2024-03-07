@@ -1,16 +1,29 @@
 .card{
     display: flex;
     justify-items: center;
-    flex-wrap: wrap;
-    width:340px;
+  
     height: 340px;
+    width:340px;
+    gap: 2rem;
     background-color: #FF6060;
     border-radius: 10px;
     margin: 2%;
     margin-top: 2rem;
     margin-bottom: 2rem;
 
-    .card-title{font-family: Montserrat;
+    
+    .card-cover {
+        width: 340px; 
+        height: 340px; 
+        display: flex; 
+        object-fit: cover;
+      }
+    
+
+    .card-title{
+    position: absolute;
+    max-width: 300px;
+    font-family: Montserrat;
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
@@ -21,5 +34,5 @@
     color: #FFFFFF;
     }
     
-   
+  
 }
