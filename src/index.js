@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route ,Navigate} from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import Rentals from './Pages/Rentals/Rentals';
 import NotFound from './Pages/NotFound/NotFound';
@@ -13,7 +13,10 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Home />} />
                 <Route path="/About" element={<About />} />
                 <Route path="/Rentals" element={<Rentals/>} />
-                <Route path="/NotFound" element={<NotFound />} />
+                <Route path="*" element={<Navigate to="/notfound" />} />
+                <Route path="/notfound" element={<NotFound />} />
+                <Route path="/Rentals/:id" element={<Rentals />} />
+                
       </Routes>
     </Router>
   </React.StrictMode>

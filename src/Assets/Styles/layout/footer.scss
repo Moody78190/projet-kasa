@@ -1,6 +1,8 @@
 .footer-container{
+    display: flex;
     position: relative;
     flex-wrap: wrap;
+    max-width:100%;
     margin: unset;
     height: 209px;
     background-color: #000000;
@@ -11,8 +13,9 @@
         position: absolute;
         color: #FFFFFF;
         font-size: 26px;
-        left: 48%;
+        left: 50%;
         top: 30%;
+        transform: translate( -50%,50%);
 
     }
     .footer-content{
@@ -20,6 +23,7 @@
         color: #FFFFFF;
         left: 40%;
         top:60%;
+        transform: translate(-15%, 10px);
         font-family: Montserrat;
         font-size: 24px;
         font-weight: 500;
@@ -31,4 +35,17 @@
 
     }
 }
+
+@media screen and (max-width: 768px) {
+   .footer-container{
+   display: flex ;
+   flex-direction: column;
+
+    .footer-content{
+        font-size: 12px;
+        transform: translate(-30%, 10px);
+    }
+
+   }
+  }
 

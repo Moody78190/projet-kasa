@@ -1,8 +1,19 @@
 import React from 'react'
+import Header from '../../components/Header'
+import Error from '../../components/Error'
+import Footer from '../../components/Footer'
+
+
+
+
 
 function NotFound() {
   return (
-    <div>NotFound</div>
+    <div><Header/>
+         <Error/>
+        <Footer/>
+
+    </div>
   )
 }
 

@@ -1,0 +1,67 @@
+
+  
+  .Collapse-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+     
+ 
+  
+    
+  
+    .collapsible {
+      flex-wrap: wrap;
+      width: 75%;
+      height: 54px;
+      padding: 10px 20px 10px 15px;
+      border-radius: 5px;
+      background-color: #FF6060;
+      border: none;
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 34px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #FFFFFF;
+      overflow-wrap: break-word; 
+      cursor: pointer;
+      transition: transform 0.9s ease-in-out;
+      
+      
+      &:hover {
+        background-color: #FF4040;
+      }
+      
+    }
+  
+    .content {
+      
+      width: 72%;
+      background: #F6F6F673;
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      
+     
+    }
+    
+    
+   
+    p{
+        width: 64%;
+    }
+    
+    .content.active {
+      max-height: 559px;
+      margin-top: -14px;
+    
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    // Vos styles pour les écrans de moins de 768px
+  }
+  

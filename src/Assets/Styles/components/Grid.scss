@@ -1,14 +1,17 @@
 .grid-container{
-    width: 82%;
-    height:auto;
     display: flex;
     flex-wrap: wrap;
+    margin: 5%;
     justify-content: center;
+    flex-wrap: wrap;
+    height:auto;
     border-radius: 25px;
     background-color: #F6F6F6;
-    margin: auto;
     margin-top: 2rem;
-    
-  
-
 }
+@media screen and (max-width: 768px) {
+    .grid-container{
+    background-color:#FFFFFF;
+       
+    }
+    }

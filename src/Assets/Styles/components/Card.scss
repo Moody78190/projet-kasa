@@ -1,19 +1,14 @@
 .card{
-    display: flex;
-    justify-items: center;
-  
-    height: 340px;
-    width:340px;
-    gap: 2rem;
-    background-color: #FF6060;
+   
     border-radius: 10px;
     margin: 2%;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    box-sizing: border-box;
 
     
     .card-cover {
-        width: 340px; 
+        width:340px;
         height: 340px; 
         display: flex; 
         object-fit: cover;
@@ -36,3 +31,14 @@
     
   
 }
+@media screen and (max-width: 768px) {
+   .card.card-cover{
+    width: 100%;
+    
+  
+ 
+  .card .card-title{
+    box-sizing: border-box;
+    white-space:nowrap;
+  }
+}}

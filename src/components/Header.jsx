@@ -1,22 +1,17 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import BigLogo from '../Assets/images/BigLogo.png';
-import'../Assets/Styles/main.scss'; 
+import React from 'react'
+import Navbar from './Navbar'
 
 function Header() {
   return (
-    <header className='header'>
-      <nav className='navbar'>
-      <div className="logo">
-        <img src={BigLogo} alt="Logo" />
-      </div>
-        <ul className='links'>
-          <li><Link to="/">Accueil</Link></li>
-          <li><Link to="/About">A propos</Link></li>
-        </ul>
-      </nav>
-    </header>
-  );
+    <Navbar/>
+  )
 }
 
-export default Header;
+export default Header
+
+
+
+            
+ 
+
+

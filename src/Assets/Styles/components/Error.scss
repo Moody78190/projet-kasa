@@ -1,0 +1,48 @@
+.Not_Found{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+.Not_Found-title{
+    font-size: 288px;
+    margin-top: 0;
+    font-family: Montserrat;
+    font-size: 288px;
+    font-weight: 700;
+    line-height: 411px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FF6060;
+    margin-bottom: 4rem;
+}
+
+.Not_Found-alert{
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    color: #FF6060;
+    
+    
+
+}
+
+
+ .Not_Found-link {
+
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em; 
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    
+ a{
+        color: #000000;
+    }
+
+
+}
+}

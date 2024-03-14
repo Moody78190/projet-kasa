@@ -1,0 +1,30 @@
+
+
+   .Tags{
+    display: flex;
+    gap: 1rem;
+    
+   
+    
+    .tag{
+    min-width: 150px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+    background: #FF6060;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 2rem;
+
+    }
+
+
+ } 
+    

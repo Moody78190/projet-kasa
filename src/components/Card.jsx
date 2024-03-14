@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Assets/Styles/main.scss';
 
-const Card = ({ title, cover, rating }) => (
+const Card = ({ title, cover,}) => (
   <div className='card'>
     <div className='card-content'>
      <h2 className='card-title'>{title}</h2>

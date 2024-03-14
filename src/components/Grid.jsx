@@ -4,8 +4,10 @@ import Data from '../Assets/Data/data.json';
 
 const GridContainer = () => {
   return (
+    <main>
     <section className="grid-container">
       {Data.map((item, index) => (
+        
         <Card
           key={index}
           title={item.title}
@@ -14,6 +16,7 @@ const GridContainer = () => {
         />
       ))}
     </section>
+    </main>
   );
 };
 
