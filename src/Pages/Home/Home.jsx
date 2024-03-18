@@ -10,11 +10,9 @@ import Grid from '../../components/Grid'
 
 function Home() {
   return (
-    <div><Header/>
-         <Banner/>
-         <Grid/>
-        <Footer/>
-
+    <div>
+      <Banner />
+      <Grid />
     </div>
   )
 }

@@ -10,11 +10,9 @@ import Collapse from '../../components/Collapse'
 
 function About() {
   return (
-    <div><Header/>
-         <Banner/>
-         <Collapse/>
-         <Footer/>
-
+    <div>
+      <Banner />
+      <Collapse />
     </div>
   )
 }
