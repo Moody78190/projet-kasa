@@ -8,7 +8,7 @@ import arrow_forward from '../Assets/images/arrow_forward.png';
 
 
 
- 
+// import Data from '../Assets/Data/data.json';
 
 const Slider = ({ data }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
