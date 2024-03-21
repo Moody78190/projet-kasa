@@ -1,10 +1,10 @@
 import React from 'react';
 import Banner from '../../components/Banner';
 import Collapse from '../../components/Collapse';
-import Mountains from'../../Assets/images/Mountains.png';
+import Mountains from '../../Assets/images/Mountains.png';
 
 function About() {
-  const menus = [
+  const data = [
     { id: 'menu1', title: 'Fiabilité', content: 'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.' },
     { id: 'menu2', title: 'Respect', content: 'La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.' },
     { id: 'menu3', title: 'Service', content: 'La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.' },
@@ -12,10 +12,14 @@ function About() {
   ];
 
   return (
-    <div>
+    <section id='about'>
       <Banner image={Mountains} />
-      <Collapse menus={menus} containerName="description-container" buttonClassName="description-collapsible"  />
-    </div>
+      <div className="container-dropdowns">
+        {data.map((item) => (
+          <Collapse key={item.title} item={item} />
+        ))}
+      </div>
+    </section>
   );
 }
 

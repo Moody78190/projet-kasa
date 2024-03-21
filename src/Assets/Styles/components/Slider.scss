@@ -1,50 +1,46 @@
-.slider-container{
-    
-    max-width: 95%;
+.slider-container {
     position: relative;
-    
 
- .slide{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 5rem;
-   
-        
-       
+
+    .slide {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
-    .slider-image{
+    .slider-image {
         width: 100%;
         flex-wrap: wrap;
         height: 415px;
         object-fit: cover;
         border-radius: 2rem;
-       
-      
+
+
     }
 
-    .slider-navigation{
-       
-        
-        .arrow_back{
+    .slider-navigation {
+
+
+        .arrow_back {
             position: absolute;
             z-index: 1;
             top: 10rem;
             left: 5rem;
-            
-           
-           
+
+
+
         }
-        .arrow_forward{
+
+        .arrow_forward {
             position: absolute;
             z-index: 1;
             top: 10rem;
             right: 0rem;
         }
-    
+
     }
-    .slider-counter{
+
+    .slider-counter {
         position: absolute;
         left: 55%;
         top: 92%;
@@ -52,34 +48,35 @@
         font-size: 18px;
         font-weight: 500;
         line-height: 25.67px;
-        color:#FFFFFF;
+        color: #FFFFFF;
 
-        
+
 
     }
 
 }
 
-.slider-description{
+.slider-description {
     margin-inline: 5rem;
-.slider-title{
-    width: 75%;
-    font-family: Montserrat;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 51px;
-    letter-spacing: 0em;
-    color: #FF6060;
 
-}
-    .slider-location{
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0em;
-    color: #000000;
-    margin-top: -2rem;
+    .slider-title {
+        width: 75%;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 51px;
+        letter-spacing: 0em;
+        color: #FF6060;
+
+    }
+
+    .slider-location {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        color: #000000;
+        margin-top: -2rem;
     }
 }
-

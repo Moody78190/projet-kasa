@@ -16,25 +16,18 @@ const Slider = ({ data }) => {
     };
 
     return (
-        <div>
+        <section className="slider-container">
 
-            <section className="slider-container">
-                
-                    <div className="slider-navigation">
-                        <img className='arrow_back' onClick={goToPreviousSlide} src={arrow_back} alt="Left-arrow" />
-                        <img className='arrow_forward' onClick={goToNextSlide} src={arrow_forward} alt="Right-arrow" />
-                        <span className='slider-counter'>{currentSlide + 1}/{data.pictures.length}</span>
-                    </div>
-                    <div className="slide">
-                        <img className='slider-image' src={data.pictures[currentSlide]} alt={data.title} />
-                        
-                    </div>
-                </section>
-                    <section className="slider-description">
-                        <h2 className='slider-title'>{data.title}</h2>
-                        <p className='slider-location'>{data.location}</p>
-                        </section>
-        </div>
+            <div className="slider-navigation">
+                <img className='arrow_back' onClick={goToPreviousSlide} src={arrow_back} alt="Left-arrow" />
+                <img className='arrow_forward' onClick={goToNextSlide} src={arrow_forward} alt="Right-arrow" />
+                <span className='slider-counter'>{currentSlide + 1}/{data.pictures.length}</span>
+            </div>
+            <div className="slide">
+                <img className='slider-image' src={data.pictures[currentSlide]} alt={data.title} />
+
+            </div>
+        </section>
     );
 };
 

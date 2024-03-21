@@ -1,0 +1,40 @@
+section#about {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+    .banner {
+        margin: unset;
+    }
+
+    .container-dropdowns {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+
+        .dropdown-container {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 748px) {
+    section#about {
+        margin-top: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        .container-dropdowns {
+            margin-top: 10px;
+            width: 100%;
+
+            .dropdown-container {
+                margin-top: 10px;
+            }
+        }
+    }
+}

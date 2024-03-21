@@ -6,14 +6,13 @@ import Error404 from '../../components/Error404';
 import Collapse from '../../components/Collapse';
 import Tags from '../../components/Tags';
 import Rating from '../../components/Rating';
-import Host from '../../components/Host'; 
 
 
 function Rentals() {
-  
+
   const { id } = useParams();
   const [data, setData] = useState(null);
-  
+
 
   useEffect(() => {
     const slideData = Data.find(item => item.id === id);
@@ -23,28 +22,31 @@ function Rentals() {
   if (!data) {
     return <Error404 />;
   }
- 
-  return (
-    <div>
-      {data && <Slider data={data} />}
-      <section>
-      <Collapse menus={[
-          { title: 'Description', content: data.description },
-          { title: 'Équipements', content: data.equipments }
-        ]} customClass="about-collapse" />
-      </section>
-      <section>
-        <Tags currentSlide={data} />
-      </section>
-      <section>
-        <Rating currentSlide={data} /> 
-      </section>
-      <Host currentSlide={data} /> 
-      <section>
-       
 
-      </section>
-    </div>
+  return (
+    <section id="lodging" >
+      <Slider data={data} />
+      <div className="container">
+        <div className="header">
+          <div className="title">
+            <h1>{data.title}</h1>
+            <h2>{data.location}</h2>
+            <Tags tags={data.tags} />
+          </div>
+          <div className="sub-header">
+            <div className="host">
+              <span>{data.host.name}</span>
+              <img src={data.host.picture} alt={data.host.name} />
+            </div>
+            <Rating rating={data.rating} />
+          </div>
+        </div>
+        <div className="dropdowns">
+          <Collapse item={{ title: 'Description', content: data.description }} />
+          <Collapse item={{ title: 'Équipements', content: data.equipments }} />
+        </div>
+      </div>
+    </section >
   );
 }
 
