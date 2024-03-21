@@ -1,12 +1,13 @@
 import React from 'react'
 import'../Assets/Styles/main.scss'; 
-import Cliffs from '../Assets/images/Cliffs.png';
 
 
 
-const Banner = () => (
+
+const Banner = (props) => (
   <section className="banner">
-    <img className='banner-img' src={Cliffs} alt="Logo" />
+   
+    <img className='banner-img' src={props.image} alt="Logo" />
     <h1 className='banner-text'>Chez vous, partout et ailleurs</h1>
   </section>
 );

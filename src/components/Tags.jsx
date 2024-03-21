@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Data from '../Assets/Data/data.json';
 
 function Tags({ currentSlide }) {
-  const tags = Data[currentSlide].tags; // Récupération des tags pour la diapositive actuelle
+  
+  const tags = currentSlide && currentSlide.tags ? currentSlide.tags : [];
 
   return (
     <div className='Tags'>
@@ -15,7 +15,9 @@ function Tags({ currentSlide }) {
 }
 
 Tags.propTypes = {
-  currentSlide: PropTypes.number.isRequired
+  currentSlide: PropTypes.shape({
+    tags: PropTypes.arrayOf(PropTypes.string) 
+  })
 };
 
 export default Tags;

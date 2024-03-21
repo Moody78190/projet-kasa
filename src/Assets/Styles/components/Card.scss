@@ -1,14 +1,12 @@
 .card{
-   
-    border-radius: 10px;
-    margin: 2%;
     margin-top: 2rem;
     margin-bottom: 2rem;
     box-sizing: border-box;
 
     
     .card-cover {
-        width:340px;
+      border-radius: 10px;
+        width:90%;
         height: 340px; 
         display: flex; 
         object-fit: cover;

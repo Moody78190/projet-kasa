@@ -1,13 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
 import Data from '../Assets/Data/data.json';
 import Star_active from '../Assets/images/Star_active.png';
 import Star_inactive from '../Assets/images/Star_inactive.png';
 
-function Rating({ currentSlide }) {
-  const rating = Data[currentSlide].rating; 
+function Rating() {
+  const rating = Data.rating;
 
-  
   const stars = Array.from({ length: 5 }, (_, index) => {
     if (index + 1 <= rating) {
       return { type: 'filled', key: index };
@@ -24,9 +23,5 @@ function Rating({ currentSlide }) {
     </div>
   );
 }
-
-Rating.propTypes = {
-  currentSlide: PropTypes.number.isRequired
-};
 
 export default Rating;

@@ -1,8 +1,7 @@
 import React from 'react'
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
 import Banner from '../../components/Banner'
 import Grid from '../../components/Grid'
+import Cliffs from '../../Assets/images/Cliffs.png'
 
 
 
@@ -11,7 +10,7 @@ import Grid from '../../components/Grid'
 function Home() {
   return (
     <div>
-      <Banner />
+      <Banner image={Cliffs}/>
       <Grid />
     </div>
   )

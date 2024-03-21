@@ -1,20 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Data from '../Assets/Data/data.json';
 
 function Host({ currentSlide }) {
-  const hosts = Data[currentSlide].host; // Récupération des données de l'hôte pour la diapositive actuelle
+
+  if (!currentSlide || typeof currentSlide !== 'object') {
+    return null; 
+  }
+
+  const { host } = currentSlide; 
+
+  if (!host) {
+    return null; 
+  }
 
   return (
     <section className='Host'>
-      <h3 className='host-title'>{hosts.name}</h3>
-      <img className='host-img' src={hosts.picture} alt={hosts.name} />
+      <h3 className='host-title'>{host.name}</h3>
+      <img className='host-img' src={host.picture} alt={host.name} />
     </section>
   );
 }
 
 Host.propTypes = {
-  currentSlide: PropTypes.number.isRequired
+  currentSlide: PropTypes.shape({
+    host: PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      picture: PropTypes.string.isRequired,
+      
+    }).isRequired,
+  }).isRequired,
 };
 
 export default Host;

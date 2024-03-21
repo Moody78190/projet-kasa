@@ -7,10 +7,7 @@ import Slider from './Slider';
 import Collapse from './Collapse';
 import Tags from './Tags';
 import Host from './Host';
-
-
 import Rating from './Rating';
-
 import Footer from './Footer'; 
 
 const App = () => {
