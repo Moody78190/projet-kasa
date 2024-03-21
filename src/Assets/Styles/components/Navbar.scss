@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 5rem 6rem 2rem; /* Modification des marges pour inclure les marges gauche et droite */
+  margin: 5rem 6rem 2rem; 
 }
 
 .navbar ul {
@@ -20,46 +20,61 @@
 
 .navbar ul a {
   color: #000000;
-}
-
-/* Ajout de styles pour les écrans de moins de 800px */
-@media screen and (max-width: 800px) {
+  text-decoration: none
   
-  .navbar ul {
-    font-size: 12px;
-    flex-wrap: wrap;
-  }
+  ;
 }
 
-/* Ajout de styles pour les écrans de moins de 325px */
-@media screen and (max-width: 325px) {
+
+.navbar .links .active {
+  
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar ul {
+    font-size: 24px;
+  }
+  .logo img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }  
+}
+
+@media screen and (max-width:800px){
   .navbar {
-    flex-direction: column;
-    justify-items: center;
+    justify-content: space-between;
+    margin: 0 2rem; 
+    margin-top: auto;
   }
   .navbar ul {
+    padding-right: -2rem;
+    font-size: 12px;
     gap: 10px;
     padding-right: 2rem;
     margin-top: 0;
-   
   }
-
-
-
-.logo img {
-  font-size: 68px; 
-  margin-bottom: 1rem;
- 
-
-  @media screen and (max-width: 800px) {
-    width: 88px;
-    margin-top: 1rem;
-  }
+  .logo img {
+    width:  68px;
+    margin-bottom: 1rem;
+  }  
 }
-}
-/* Modification de la marge pour les écrans de moins de 800px */
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 468px) {
   .navbar {
-    margin: 0 2rem; /* Modification de la marge horizontale */
+    justify-content: space-between;
+    margin: 0 2rem; 
+    margin-top: auto;
   }
+  .navbar ul {
+    padding-right: 3rem;
+    font-size: 12px;
+    gap: 10px;
+    padding-right: 2rem;
+    margin-top: 0;
+  }
+  .logo img {
+    width:  68px;
+    margin-bottom: 1rem;
+  }  
 }

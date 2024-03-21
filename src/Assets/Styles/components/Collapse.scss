@@ -1,20 +1,24 @@
 
   
-  .Collapse-container {
+  .description-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     margin-top: 3rem;
+    padding-inline: 10rem;
+   
      
  
   
     
   
-    .collapsible {
-      flex-wrap: wrap;
-      width: 75%;
-      height: 54px;
+    .description-collapsible {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width:100%;
+      height: auto;
       padding: 10px 20px 10px 15px;
       border-radius: 5px;
       background-color: #FF6060;
@@ -24,8 +28,7 @@
       font-weight: 700;
       line-height: 34px;
       letter-spacing: 0em;
-      text-align: left;
-      color: #FFFFFF;
+       color: #FFFFFF;
       overflow-wrap: break-word; 
       cursor: pointer;
       transition: transform 0.9s ease-in-out;
@@ -39,11 +42,15 @@
   
     .content {
       
-      width: 72%;
+      width: 95%;
       background: #F6F6F673;
       padding: 0 18px;
       max-height: 0;
       overflow: hidden;
+      font-family: Montserrat;
+      
+     
+
       
      
     }
@@ -61,8 +68,45 @@
     }
   }
   
-  @media screen and (max-width: 768px) {
-    // Vos styles pour les écrans de moins de 768px
+  @media screen and (max-width: 800px) {
+   .description-container{
+    display: flex;
+    justify-items: center;
+    padding-inline: 3rem;
+
+    .description-collapsible {
+      background-color: #FF6060;
+      border: none;
+      font-family: Montserrat;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 34px;
+      letter-spacing: 0em;
+       color: #FFFFFF;
+      overflow-wrap: break-word; 
+      cursor: pointer;
+      transition: transform 0.9s ease-in-out;
+      
+      
+      &:hover {
+        background-color: #FF4040;
+      }
+      
+    }
+    .arrow_top{
+      width: 24px;
+    }
+   }
+
+   
   }
   
- 
+
+  //part for the about page//
+ .Collapsible-container{
+  
+  .collapsible{
+    width:50%
+  }
+
+ }

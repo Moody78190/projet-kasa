@@ -10,7 +10,7 @@ import Cliffs from '../../Assets/images/Cliffs.png'
 function Home() {
   return (
     <div>
-      <Banner image={Cliffs}/>
+      <Banner image={Cliffs} showText={true} />
       <Grid />
     </div>
   )
