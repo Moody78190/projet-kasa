@@ -1,20 +1,21 @@
 .grid-container {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    grid-gap: 10px;
-    background-color: #F6F6F6;
-    width: 87%;
-    margin: 2rem auto; 
-    padding-left: 3rem;
-    border-radius: 2rem;
-  }
-  
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-gap: 10px;
+  background-color: #F6F6F6;
+  width: 87%;
+  margin: 2rem auto; 
+  padding-left: 3rem;
+  border-radius: 2rem;
+}
+
 @media screen and (max-width: 768px) {
-    .grid-container{
-    background-color:#FFFFFF;
-   
-       
-    }
-    }
+  .grid-container {
+      background-color: #FFFFFF;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .grid-container {
+     padding-left:.5rem;
+  }}

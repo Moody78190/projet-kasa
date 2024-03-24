@@ -35,14 +35,15 @@
     }
     @media screen and (max-width: 800px) { 
        .banner{
-        width: 90%;
-       margin: auto;
+        width: 100%;
+        margin: auto;
         
        
        }
        .banner-img{
+       
         height: 111px;
-        width:100%;
+        
        }
 
         .banner-text {
@@ -57,9 +58,12 @@
     }
 }
 
-/* Styles pour les écrans plus petits */
+
 @media screen and (max-width: 480px) {
-    .banner {
-      width: 90%; 
+    .banner  {
+      width: 100%; 
+     justify-content: center;
     }
   }
+
+  

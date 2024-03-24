@@ -1,11 +1,14 @@
 .slider-container {
     position: relative;
+    display: flex;
+    justify-content: center;
 
 
     .slide {
+        width: 92%;
         display: flex;
         justify-content: center;
-        flex-direction: column;
+       
     }
 
     .slider-image {
@@ -24,8 +27,8 @@
         .arrow_back {
             position: absolute;
             z-index: 1;
-            top: 10rem;
-            left: 5rem;
+            top: 40%;
+            left: 3%;
 
 
 
@@ -34,15 +37,15 @@
         .arrow_forward {
             position: absolute;
             z-index: 1;
-            top: 10rem;
-            right: 0rem;
+            top: 42%;
+            right: 3%;
         }
 
     }
 
     .slider-counter {
         position: absolute;
-        left: 55%;
+        left: 50%;
         top: 92%;
         font-family: Montserrat;
         font-size: 18px;
@@ -78,5 +81,66 @@
         letter-spacing: 0em;
         color: #000000;
         margin-top: -2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .slider-container{
+        .slider-image{
+            width: 100%;
+            height: 255px;
+        }
+
+        .slider-navigation {
+
+
+            .arrow_back {
+                top: 50%;
+                left: 5%;
+                width: 24px;
+              
+    
+    
+    
+            }
+    
+            .arrow_forward {
+                top: 50%;
+                right:5%;
+                width: 24px;
+            }
+
+            .slider-counter{
+                display: none;
+            }
+    }
+    
+}}
+
+@media screen and (max-width: 768px) {
+    .slider-container{
+        .slider-image{
+            width: 100%;
+            height: 255px;
+        }
+    }
+        .slider-navigation {
+
+
+            .arrow_back {
+                top: 10rem;
+                left: 2rem;
+                width: 24px;
+              
+    
+    
+    
+            }
+    
+            .arrow_forward {
+                top: 10rem;
+                right:2rem;
+                width: 24px;
+            }
     }
 }
