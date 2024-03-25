@@ -58,7 +58,6 @@
 @media screen and (max-width: 468px) {
   .navbar {
     flex-wrap: nowrap; 
-    justify-content: center;
     margin: 0 1rem;
     align-items: center;
   }
@@ -86,7 +85,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-right: 5rem;
+    
+  
   }
 
   .navbar ul {

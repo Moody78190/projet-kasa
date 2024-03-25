@@ -2,9 +2,17 @@
 
 .banner{
    width: 90%;
-    
+   
   
-    
-    
 }
 }
+
+@media screen and (max-width: 325px) {
+
+    .banner{
+       width: 100%;
+       padding-left: 7.5%;
+       
+      
+    }
+    }

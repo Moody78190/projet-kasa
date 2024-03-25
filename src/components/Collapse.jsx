@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import arrowTop from '../Assets/images/arrow_up.png';
-import arrowDown from '../Assets/images/arrow_down.png'
+import arrowDown from '../Assets/images/arrow_down.png';
 
 const Collapse = ({ item }) => {
   const [isOpen, setIsOpen] = useState(false)
