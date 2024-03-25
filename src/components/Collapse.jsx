@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import arrowTop from '../Assets/images/arrow_top.png';
+import arrowTop from '../Assets/images/arrow_up.png';
 import arrowDown from '../Assets/images/arrow_down.png'
 
 const Collapse = ({ item }) => {
@@ -24,7 +24,7 @@ const Collapse = ({ item }) => {
       <div className="dropdown">
         <span>{item.title}</span>
         <img
-          src={isOpen ? arrowDown: arrowTop}
+          src={isOpen ? arrowDown : arrowTop}
           alt="arrow"
           onClick={() => setIsOpen(!isOpen)}
         />

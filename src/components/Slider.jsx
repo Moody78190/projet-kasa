@@ -17,15 +17,16 @@ const Slider = ({ data }) => {
 
     return (
         <section className="slider-container">
-
-            <div className="slider-navigation">
-                <img className='arrow_back' onClick={goToPreviousSlide} src={arrow_back} alt="Left-arrow" />
-                <img className='arrow_forward' onClick={goToNextSlide} src={arrow_forward} alt="Right-arrow" />
-                <span className='slider-counter'>{currentSlide + 1}/{data.pictures.length}</span>
-            </div>
+            {
+                data.pictures.length > 1 ?
+                    <div className="slider-navigation">
+                        <img className='arrow_back' onClick={goToPreviousSlide} src={arrow_back} alt="Left-arrow" />
+                        <img className='arrow_forward' onClick={goToNextSlide} src={arrow_forward} alt="Right-arrow" />
+                        <span className='slider-counter'>{currentSlide + 1}/{data.pictures.length}</span>
+                    </div> : <></>
+            }
             <div className="slide">
                 <img className='slider-image' src={data.pictures[currentSlide]} alt={data.title} />
-
             </div>
         </section>
     );
