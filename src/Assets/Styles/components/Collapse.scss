@@ -17,7 +17,7 @@
     height: 47px;
     z-index: 1;
 
-    span {
+    h3 {
       padding-left: 20px;
       font-family: Montserrat;
       font-size: 24px;
@@ -26,10 +26,8 @@
       text-align: left;
 
     }
-
-    img {
-      height: 16px;
-      padding-right: 20px;
+  .arrow {
+      padding-right: 1rem;
       cursor: pointer;
     }
   }
@@ -58,12 +56,8 @@
       height: 30px;
 
 
-      span {
+      h3 {
         font-size: 13px;
-      }
-
-      img {
-        height: 8px;
       }
     }
 

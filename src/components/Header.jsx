@@ -1,17 +1,8 @@
-import React from 'react'
-import Navbar from './Navbar'
+import React from "react";
+import Navbar from "./Navbar";
 
 function Header() {
-  return (
-    <Navbar/>
-  )
+  return <Navbar />;
 }
 
-export default Header
-
-
-
-            
- 
-
-
+export default Header;

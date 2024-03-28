@@ -1,5 +1,5 @@
-import starRed from '../Assets/images/Star_active.png';
-import starEmpty from '../Assets/images/Star_inactive.png';
+import starRed from "../Assets/images/Star_active.png";
+import starEmpty from "../Assets/images/Star_inactive.png";
 
 const Rating = ({ rating }) => (
   <div className="stars">
@@ -12,6 +12,6 @@ const Rating = ({ rating }) => (
       />
     ))}
   </div>
-)
+);
 
-export default Rating
+export default Rating;

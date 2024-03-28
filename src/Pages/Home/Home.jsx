@@ -1,11 +1,7 @@
-import React from 'react'
-import Banner from '../../components/Banner'
-import Grid from '../../components/Grid'
-import Cliffs from '../../Assets/images/Cliffs.png'
-
-
-
-
+import React from "react";
+import Banner from "../../components/Banner";
+import Grid from "../../components/Grid";
+import Cliffs from "../../Assets/images/Cliffs.png";
 
 function Home() {
   return (
@@ -13,7 +9,7 @@ function Home() {
       <Banner image={Cliffs} showText={true} />
       <Grid />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

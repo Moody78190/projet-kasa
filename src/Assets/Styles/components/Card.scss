@@ -1,42 +1,43 @@
 .card{
+    position: relative;
     margin-top: 2rem;
     margin-bottom: 2rem;
     box-sizing: border-box;
 
     
     .card-cover {
-      border-radius: 10px;
+        border-radius: 10px;
         width:90%;
         height: 340px; 
-        display: flex; 
         object-fit: cover;
       }
     
+.card-content{
+    display:flex;
+    overflow-wrap: break-word;
+    align-items:flex-end
+  
 
-    .card-title{
-    position: absolute;
-    max-width: 300px;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: left;
-    padding-left: 1rem;
-    padding-top: 17rem;
-    color: #FFFFFF;
-    }
+}
+.card-title {
+  position: absolute;
+  margin-left: 1rem;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  color: #FFFFFF;
+  max-width: 75%;
+  
+}
     
   
 }
 @media screen and (max-width: 768px) {
    .card.card-cover{
     width: 100%;
-    
   
- 
-  .card .card-title{
-    box-sizing: border-box;
-    white-space:nowrap;
-  }
-}}
+}
+
+}

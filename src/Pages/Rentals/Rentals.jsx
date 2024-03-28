@@ -1,21 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import Slider from '../../components/Slider';
-import { useParams } from 'react-router-dom';
-import Data from '../../Assets/Data/data.json';
-import Error404 from '../../components/Error404';
-import Collapse from '../../components/Collapse';
-import Tags from '../../components/Tags';
-import Rating from '../../components/Rating';
-
+import React, { useEffect, useState } from "react";
+import Slider from "../../components/Slider";
+import { useParams } from "react-router-dom";
+import Data from "../../Assets/Data/data.json";
+import Error404 from "../../components/Error404";
+import Collapse from "../../components/Collapse";
+import Tags from "../../components/Tags";
+import Rating from "../../components/Rating";
 
 function Rentals() {
-
   const { id } = useParams();
   const [data, setData] = useState(null);
 
-
   useEffect(() => {
-    const slideData = Data.find(item => item.id === id);
+    const slideData = Data.find((item) => item.id === id);
     setData(slideData);
   }, [id]);
 
@@ -24,7 +21,7 @@ function Rentals() {
   }
 
   return (
-    <section id="lodging" >
+    <section id="lodging">
       <Slider data={data} />
       <div className="container">
         <div className="header">
@@ -42,11 +39,13 @@ function Rentals() {
           </div>
         </div>
         <div className="dropdowns">
-          <Collapse item={{ title: 'Description', content: data.description }} />
-          <Collapse item={{ title: 'Équipements', content: data.equipments }} />
+          <Collapse
+            item={{ title: "Description", content: data.description }}
+          />
+          <Collapse item={{ title: "Équipements", content: data.equipments }} />
         </div>
       </div>
-    </section >
+    </section>
   );
 }
 

@@ -7,26 +7,26 @@ const Collapse = ({ item }) => {
 
   const description = (data) =>
     Array.isArray(data) ? (
-      <p>
+      <ul>
         {data.map((element) => (
-          <span key={element}>
+          <li key={element}>
             {element}
-            <br></br>
-          </span>
+         </li>
         ))}
-      </p>
+      </ul>
     ) : (
       <p>{data}</p>
     )
 
   return (
     <div className="dropdown-container">
-      <div className="dropdown">
-        <span>{item.title}</span>
-        <img
-          src={isOpen ? arrowDown : arrowTop}
+      <div className="dropdown"onClick={() => setIsOpen(!isOpen)}>
+        <h3>{item.title}</h3>
+        <img className='arrow'
+          src={isOpen ? arrowDown : arrowTop }
           alt="arrow"
-          onClick={() => setIsOpen(!isOpen)}
+          
+          
         />
       </div>
       {isOpen ? description(item.content) : ''}
